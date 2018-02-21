@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
@@ -24,6 +25,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.mikepenz.fastadapter.commons.utils.RecyclerViewCacheUtil;
@@ -70,6 +72,8 @@ public class MainActivity extends BaseActivity implements CustomTabActivityHelpe
     private static final long USER_ID = 500;
     private static final int ABOUT = 600;
     private static final int CONTRIBUTE = 700;
+    private boolean doubleBackToExitPressedOnce = false;
+
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -383,11 +387,20 @@ public class MainActivity extends BaseActivity implements CustomTabActivityHelpe
     @Override
     public void onBackPressed() {
         //handle the back press :D close the drawer first and if the drawer is closed close the activity
+
         if (result != null && result.isDrawerOpen()) {
             result.closeDrawer();
-        } else {
-            super.onBackPressed();
         }
+        else if(doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this,"Please press back again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(() -> doubleBackToExitPressedOnce=false, 2000);
+
     }
 
     @Override
