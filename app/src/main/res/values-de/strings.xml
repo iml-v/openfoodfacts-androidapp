@@ -400,10 +400,6 @@
   <string name="preference_header_network">Netzwerk</string>
   <string name="preference_header_contributing">Mitwirken</string>
   <string name="not_support_books">Bücher werden derzeit von „Open Food Facts” nicht unterstützt</string>
-  <string name="seconds_ago">Sekunden her</string>
-  <string name="minutes_ago">Minuten her</string>
-  <string name="hours_ago">Stunden her</string>
-  <string name="days_ago">Tagen her</string>
   <string name="scan_first_string">Ihre Verlauf der angesehenen Produkte wird hier aufgelistet.\nDer Verlauf ist nur für Ihre Augen bestimmt und wird lokal gespeichert.</string>
   <string name="log_in">Benutzername</string>
   <string name="login_true">Bereits angemeldet!</string>
@@ -412,4 +408,22 @@
   <string name="dialog_cancel">Abbrechen</string>
   <string name="brand_string">Marke</string>
   <string name="country_string">Land</string>
+  <string name="last_seen">%1$d %2$s her</string>
+
+  <plurals name="seconds_plural">
+    <item quantity="one">Sekunde</item>
+    <item quantity="other">Sekunden</item>
+  </plurals>
+  <plurals name="minutes_plural">
+    <item quantity="one">Minute</item>
+    <item quantity="other">Minuten</item>
+  </plurals>
+  <plurals name="hours_plural">
+    <item quantity="one">Stunde</item>
+    <item quantity="other">Stunden</item>
+  </plurals>
+  <plurals name="days_plural">
+    <item quantity="one">Tag</item>
+    <item quantity="other">Tagen</item>
+  </plurals>
 </resources>

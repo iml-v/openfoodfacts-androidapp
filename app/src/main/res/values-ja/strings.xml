@@ -400,10 +400,6 @@
   <string name="preference_header_network">ネットワーク</string>
   <string name="preference_header_contributing">貢献</string>
   <string name="not_support_books">現在、書籍は Open Food Facts でサポートされていません</string>
-  <string name="seconds_ago">seconds ago</string>
-  <string name="minutes_ago">minutes ago</string>
-  <string name="hours_ago">hours ago</string>
-  <string name="days_ago">days ago</string>
   <string name="scan_first_string">Your viewed product history will be listed here.\nThis history is for your eyes only and is stored locally.</string>
   <string name="log_in">ログイン</string>
   <string name="login_true">Already logged in!</string>
@@ -412,4 +408,22 @@
   <string name="dialog_cancel">キャンセル</string>
   <string name="brand_string">ブランド（会社名）</string>
   <string name="country_string">国</string>
+  <string name="last_seen">%1$d %2$s 前</string>
+
+  <plurals name="seconds_plural">
+    <item quantity="one">秒</item>
+    <item quantity="other">秒</item>
+  </plurals>
+  <plurals name="minutes_plural">
+    <item quantity="one">分</item>
+    <item quantity="other">分</item>
+  </plurals>
+  <plurals name="hours_plural">
+    <item quantity="one">時間</item>
+    <item quantity="other">時間</item>
+  </plurals>
+  <plurals name="days_plural">
+    <item quantity="one">日</item>
+    <item quantity="other">日</item>
+  </plurals>
 </resources>

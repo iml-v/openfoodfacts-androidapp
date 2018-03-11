@@ -400,10 +400,6 @@
   <string name="preference_header_network">Network</string>
   <string name="preference_header_contributing">Contributing</string>
   <string name="not_support_books">Books are not currently supported by Open Food Facts</string>
-  <string name="seconds_ago">seconds ago</string>
-  <string name="minutes_ago">minutes ago</string>
-  <string name="hours_ago">hours ago</string>
-  <string name="days_ago">days ago</string>
   <string name="scan_first_string">Your viewed product history will be listed here.\nThis history is for your eyes only and is stored locally.</string>
   <string name="log_in">Mag-login</string>
   <string name="login_true">Already logged in!</string>
@@ -412,4 +408,22 @@
   <string name="dialog_cancel">Cancel</string>
   <string name="brand_string">Mga Tatak</string>
   <string name="country_string">Bansa</string>
+  <string name="last_seen">%1$d %2$s ago</string>
+
+  <plurals name="seconds_plural">
+    <item quantity="one">second</item>
+    <item quantity="other">seconds</item>
+  </plurals>
+  <plurals name="minutes_plural">
+    <item quantity="one">minute</item>
+    <item quantity="other">minutes</item>
+  </plurals>
+  <plurals name="hours_plural">
+    <item quantity="one">hour</item>
+    <item quantity="other">hours</item>
+  </plurals>
+  <plurals name="days_plural">
+    <item quantity="one">day</item>
+    <item quantity="other">days</item>
+  </plurals>
 </resources>

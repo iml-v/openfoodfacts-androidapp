@@ -400,10 +400,6 @@
   <string name="preference_header_network">Hálózat</string>
   <string name="preference_header_contributing">Hozzájárulás</string>
   <string name="not_support_books">A könyveket jelenleg nem támogatja az Open Food Facts</string>
-  <string name="seconds_ago">másodperccel ezelőtt</string>
-  <string name="minutes_ago">perccel ezelőtt</string>
-  <string name="hours_ago">órával ezelőtt</string>
-  <string name="days_ago">nappal ezelőtt</string>
   <string name="scan_first_string">A megtekintett termékek listáját itt találja.\nHelyben tárolt tartalom, kizárólag az Ön számára látható.</string>
   <string name="log_in">Bejelentkezés</string>
   <string name="login_true">Már bejelentkezett!</string>
@@ -412,4 +408,22 @@
   <string name="dialog_cancel">Mégse</string>
   <string name="brand_string">Márka</string>
   <string name="country_string">Ország</string>
+  <string name="last_seen">%1$d %2$s ago</string>
+
+  <plurals name="seconds_plural">
+    <item quantity="one">second</item>
+    <item quantity="other">seconds</item>
+  </plurals>
+  <plurals name="minutes_plural">
+    <item quantity="one">minute</item>
+    <item quantity="other">minutes</item>
+  </plurals>
+  <plurals name="hours_plural">
+    <item quantity="one">hour</item>
+    <item quantity="other">hours</item>
+  </plurals>
+  <plurals name="days_plural">
+    <item quantity="one">day</item>
+    <item quantity="other">days</item>
+  </plurals>
 </resources>

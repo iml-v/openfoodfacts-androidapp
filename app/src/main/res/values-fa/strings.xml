@@ -412,4 +412,22 @@
   <string name="dialog_cancel">Cancel</string>
   <string name="brand_string">نام تجاری</string>
   <string name="country_string">Country</string>
+  <string name="last_seen">%1$d %2$s ago</string>
+
+  <plurals name="seconds_plural">
+    <item quantity="one">second</item>
+    <item quantity="other">seconds</item>
+  </plurals>
+  <plurals name="minutes_plural">
+    <item quantity="one">minute</item>
+    <item quantity="other">minutes</item>
+  </plurals>
+  <plurals name="hours_plural">
+    <item quantity="one">hour</item>
+    <item quantity="other">hours</item>
+  </plurals>
+  <plurals name="days_plural">
+    <item quantity="one">day</item>
+    <item quantity="other">days</item>
+  </plurals>
 </resources>

@@ -400,10 +400,6 @@
   <string name="preference_header_network">crwdns37216:0crwdne37216:0</string>
   <string name="preference_header_contributing">crwdns37218:0crwdne37218:0</string>
   <string name="not_support_books">crwdns37219:0crwdne37219:0</string>
-  <string name="seconds_ago">crwdns37231:0crwdne37231:0</string>
-  <string name="minutes_ago">crwdns37232:0crwdne37232:0</string>
-  <string name="hours_ago">crwdns37233:0crwdne37233:0</string>
-  <string name="days_ago">crwdns37234:0crwdne37234:0</string>
   <string name="scan_first_string">crwdns37235:0crwdne37235:0</string>
   <string name="log_in">crwdns37236:0crwdne37236:0</string>
   <string name="login_true">crwdns37237:0crwdne37237:0</string>
@@ -412,4 +408,22 @@
   <string name="dialog_cancel">crwdns37222:0crwdne37222:0</string>
   <string name="brand_string">crwdns37229:0crwdne37229:0</string>
   <string name="country_string">crwdns37239:0crwdne37239:0</string>
+  <string name="last_seen">%1$d %2$s ago</string>
+
+  <plurals name="seconds_plural">
+    <item quantity="one">second</item>
+    <item quantity="other">seconds</item>
+  </plurals>
+  <plurals name="minutes_plural">
+    <item quantity="one">minute</item>
+    <item quantity="other">minutes</item>
+  </plurals>
+  <plurals name="hours_plural">
+    <item quantity="one">hour</item>
+    <item quantity="other">hours</item>
+  </plurals>
+  <plurals name="days_plural">
+    <item quantity="one">day</item>
+    <item quantity="other">days</item>
+  </plurals>
 </resources>
