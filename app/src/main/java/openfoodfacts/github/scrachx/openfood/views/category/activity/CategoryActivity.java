@@ -12,7 +12,7 @@ import openfoodfacts.github.scrachx.openfood.views.BaseActivity;
 
 public class CategoryActivity extends BaseActivity {
 
-    private View offlineView , onlineView;
+    private View offlineView, onlineView;
 
     public static Intent getIntent(Context context) {
         return new Intent(context, CategoryActivity.class);
@@ -21,7 +21,7 @@ public class CategoryActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(getResources().getBoolean(R.bool.portrait_only)){
+        if(getResources().getBoolean(R.bool.portrait_only)) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
         setContentView(R.layout.activity_category);
@@ -35,12 +35,12 @@ public class CategoryActivity extends BaseActivity {
 
     }
 
-    private void checkNetworkAndShowScreen(){
+    private void checkNetworkAndShowScreen() {
         if (Utils.isNetworkConnected(this)) {
             onlineView.setVisibility(View.VISIBLE);
             offlineView.setVisibility(View.GONE);
         }
-        else{
+        else {
             offlineView.setVisibility(View.VISIBLE);
             onlineView.setVisibility(View.GONE);
 

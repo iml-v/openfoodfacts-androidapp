@@ -152,8 +152,8 @@ public class HistoryScanActivity extends BaseActivity implements SwipeController
     }
 
     public void exportCSV() {
-        String folder_main = " ";
-        String appname = " ";
+        String folder_main;
+        String appname;
         if ((BuildConfig.FLAVOR.equals("off"))) {
             folder_main = " Open Food Facts ";
             appname = "OFF";

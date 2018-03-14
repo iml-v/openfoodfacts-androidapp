@@ -355,8 +355,7 @@ public class MainActivity extends BaseActivity implements CustomTabActivityHelpe
             headerResult.setActiveProfile(profile);
         }
 
-        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(getBaseContext
-                ());
+        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         if (settings.getBoolean("startScan", false)) {
             Intent cameraIntent = new Intent(MainActivity.this, ScannerFragmentActivity.class);
             startActivity(cameraIntent);

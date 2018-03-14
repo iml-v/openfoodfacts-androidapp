@@ -497,7 +497,7 @@ public class SaveProductOfflineActivity extends BaseActivity {
                                 public void onError() {
                                 }
                             });
-                } catch (Exception e){
+                } catch (Exception e) {
                     Picasso.with(this)
                             .load(photoFile)
                             .resize(640, 480)
@@ -550,7 +550,7 @@ public class SaveProductOfflineActivity extends BaseActivity {
                                 public void onError() {
                                 }
                             });
-                } catch (Exception e){
+                } catch (Exception e) {
                     Picasso.with(this)
                             .load(photoFile)
                             .resize(640, 480)

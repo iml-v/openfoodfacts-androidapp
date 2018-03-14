@@ -51,14 +51,18 @@ public class CustomEditTextView extends AppCompatEditText {
                 final int drawableBottomId = attributeArray.getResourceId(R.styleable.CustomEditTextView_drawableBottomCompat, -1);
                 final int drawableTopId = attributeArray.getResourceId(R.styleable.CustomEditTextView_drawableTopCompat, -1);
 
-                if (drawableLeftId != -1)
+                if (drawableLeftId != -1) {
                     drawableLeft = AppCompatResources.getDrawable(context, drawableLeftId);
-                if (drawableRightId != -1)
+                }
+                if (drawableRightId != -1) {
                     drawableRight = AppCompatResources.getDrawable(context, drawableRightId);
-                if (drawableBottomId != -1)
+                }
+                if (drawableBottomId != -1) {
                     drawableBottom = AppCompatResources.getDrawable(context, drawableBottomId);
-                if (drawableTopId != -1)
+                }
+                if (drawableTopId != -1) {
                     drawableTop = AppCompatResources.getDrawable(context, drawableTopId);
+                }
             }
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {

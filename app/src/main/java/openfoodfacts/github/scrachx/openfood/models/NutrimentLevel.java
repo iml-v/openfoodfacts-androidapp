@@ -18,7 +18,7 @@ public enum NutrimentLevel {
     LOW, MODERATE, HIGH;
 
     @JsonCreator
-    public static NutrimentLevel fromJson(String level){
+    public static NutrimentLevel fromJson(String level) {
         if (isBlank(level)) {
             return null;
         }

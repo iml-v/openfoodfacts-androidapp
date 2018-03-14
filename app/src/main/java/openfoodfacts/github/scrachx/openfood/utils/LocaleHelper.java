@@ -63,7 +63,7 @@ public class LocaleHelper {
         String[] localeParts = locale.split("-");
         String language = localeParts[0];
         String country = localeParts.length == 2 ? localeParts[1] : "";
-        Locale localeObj=null;
+        Locale localeObj = null;
         if (locale.contains("+")) {
             localeParts = locale.split("\\+");
             language = localeParts[1];

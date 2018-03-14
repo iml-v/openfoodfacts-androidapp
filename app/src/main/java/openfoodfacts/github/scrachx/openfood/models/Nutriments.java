@@ -23,7 +23,7 @@ public class Nutriments implements Serializable {
     private static final long serialVersionUID = 1L;
     private static final String DEFAULT_UNIT = "g";
 
-    public final static String ENERGY ="energy";
+    public final static String ENERGY = "energy";
     public static final String ENERGY_FROM_FAT = "energy-from-fat";
     public static final String FAT = "fat";
     public static final String SATURATED_FAT = "saturated-fat";
@@ -148,7 +148,7 @@ public class Nutriments implements Serializable {
         put(Nutriments.CHLOROPHYL, R.string.chlorophyl);
     }};
 
-    public static final Map<String, Integer> FAT_MAP = new HashMap<String, Integer>(){{
+    public static final Map<String, Integer> FAT_MAP = new HashMap<String, Integer>() {{
         put(Nutriments.SATURATED_FAT, R.string.nutrition_satured_fat);
         put(Nutriments.MONOUNSATURATED_FAT, R.string.nutrition_monounsaturatedFat);
         put(Nutriments.POLYUNSATURATED_FAT, R.string.nutrition_polyunsaturatedFat);
@@ -159,7 +159,7 @@ public class Nutriments implements Serializable {
         put(Nutriments.CHOLESTEROL, R.string.nutrition_cholesterol);
     }};
 
-    public static final Map<String, Integer> CARBO_MAP = new HashMap<String, Integer>(){{
+    public static final Map<String, Integer> CARBO_MAP = new HashMap<String, Integer>() {{
         put(Nutriments.SUGARS, R.string.nutrition_sugars);
         put(Nutriments.SUCROSE, R.string.nutrition_sucrose);
         put(Nutriments.GLUCOSE, R.string.nutrition_glucose);
@@ -169,13 +169,13 @@ public class Nutriments implements Serializable {
         put(Nutriments.MALTODEXTRINS, R.string.nutrition_maltodextrins);
     }};
 
-    public static final Map<String, Integer> PROT_MAP = new HashMap<String, Integer>(){{
+    public static final Map<String, Integer> PROT_MAP = new HashMap<String, Integer>() {{
         put(Nutriments.CASEIN, R.string.nutrition_casein);
         put(Nutriments.SERUM_PROTEINS, R.string.nutrition_serum_proteins);
         put(Nutriments.NUCLEOTIDES, R.string.nutrition_nucleotides);
     }};
 
-    public static final Map<String, Integer> VITAMINS_MAP = new HashMap<String, Integer>(){{
+    public static final Map<String, Integer> VITAMINS_MAP = new HashMap<String, Integer>() {{
         put(Nutriments.VITAMIN_A, R.string.vitamin_a);
         put(Nutriments.BETA_CAROTENE, R.string.vitamin_a);
         put(Nutriments.VITAMIN_D, R.string.vitamin_d);
@@ -196,7 +196,7 @@ public class Nutriments implements Serializable {
     private boolean containsVitamins;
     private boolean containsMinerals;
 
-    public Nutriment get(String nutrimentName){
+    public Nutriment get(String nutrimentName) {
         if (!additionalProperties.containsKey(nutrimentName)) {
             return null;
         }
@@ -204,24 +204,24 @@ public class Nutriments implements Serializable {
         return new Nutriment(additionalProperties.get(nutrimentName).toString(), get100g(nutrimentName), getServing(nutrimentName), getUnit(nutrimentName));
     }
 
-    public String getUnit(String nutrimentName){
+    public String getUnit(String nutrimentName) {
         String unit = ((String) additionalProperties.get(nutrimentName + "_unit"));
         return isEmpty(unit) ? DEFAULT_UNIT : unit;
     }
 
-    public String getServing(String nutrimentName){
+    public String getServing(String nutrimentName) {
         return additionalProperties.get(nutrimentName + "_serving").toString();
     }
 
-    public String get100g(String nutrimentName){
+    public String get100g(String nutrimentName) {
         return additionalProperties.get(nutrimentName + "_100g").toString();
     }
 
-    public Double getValue(String nutrimentName){
+    public Double getValue(String nutrimentName) {
         return ((Double) additionalProperties.get(nutrimentName + "_value"));
     }
 
-    public boolean contains(String nutrimentName){
+    public boolean contains(String nutrimentName) {
         return additionalProperties.containsKey(nutrimentName);
     }
 

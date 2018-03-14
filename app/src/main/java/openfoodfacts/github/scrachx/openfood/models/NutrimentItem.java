@@ -11,7 +11,7 @@ public class NutrimentItem {
     private final CharSequence servingValue;
     private final CharSequence unit;
 
-    public NutrimentItem(CharSequence title, CharSequence value, CharSequence servingValue, CharSequence unit){
+    public NutrimentItem(CharSequence title, CharSequence value, CharSequence servingValue, CharSequence unit) {
         this.title = title;
         this.value = value;
         this.servingValue = servingValue;
@@ -25,7 +25,7 @@ public class NutrimentItem {
      * @param servingValue
      * @param unit
      */
-    public NutrimentItem(@NonNull String title, String value, String servingValue, String unit){
+    public NutrimentItem(@NonNull String title, String value, String servingValue, String unit) {
         this.title = title;
         this.value = getRoundNumber(value);
         this.servingValue = getRoundNumber(servingValue);
